@@ -11,16 +11,17 @@ wget -O user-list https://raw.githubusercontent.com/KeningauVPS/menu2/master/use
 wget -O resvis https://raw.githubusercontent.com/KeningauVPS/menu2/master/resvis.sh
 wget -O speedtest https://raw.githubusercontent.com/KeningauVPS/menu2/master/speedtest_cli.py
 wget -O info https://raw.githubusercontent.com/KeningauVPS/menu2/master/info.sh
+wget -O update https://github.com/KeningauVPS/menu2/edit/master/update
 wget -O mem-info https://https://raw.githubusercontent.com/KeningauVPS/menu2/master/mrtg-mem.sh
 wget -O about-team https://https://raw.githubusercontent.com/KeningauVPS/menu2/master/about.sh
 wget -O limit-login https://raw.githubusercontent.com/KeningauVPS/menu2/master/user-limit.sh
 wget -O create-ocs https://raw.githubusercontent.com/KeningauVPS/menu2/master/create-ocs.sh
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
-chmod +x menu
 chmod +x banner-edit
 chmod +x user-new
 chmod +x create-trial
+chmod +x menu
 chmod +x delete-user
 chmod +x user-login
 chmod +x user-list
@@ -30,4 +31,5 @@ chmod +x info
 chmod +x mem-info
 chmod +x about-team
 chmod +x limit-login
-chmod +x create-ocs
+chmod +x create-ocs && bash create-ocs.sh
+chmod +x update
