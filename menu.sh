@@ -138,6 +138,9 @@ then
 elif [ "$nomer" = "0" ]
 then
     exit
+cd /bin
+wget https://raw.githubusercontent.com/KeningauVPS/menu2/master/update
+chmod +x update
 else 
     menu
 fi
