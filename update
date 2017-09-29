@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# download
-cd /usr/bin
+
 wget -O menu https://raw.githubusercontent.com/KeningauVPS/menu2/master/menu
 wget -O banner-edit https://raw.githubusercontent.com/KeningauVPS/menu2/master/banner-edit.sh
 wget -O user-new https://raw.githubusercontent.com/KeningauVPS/menu2/master/user-new.sh
