@@ -2,7 +2,7 @@
 
 # download
 cd /usr/bin
-wget -O menu https://raw.githubusercontent.com/KeningauVPS/menu2/master/menu.sh"
+wget -O menu https://raw.githubusercontent.com/KeningauVPS/menu2/master/menu"
 wget -O banner-edit "https://raw.githubusercontent.com/KeningauVPS/menu2/master/banner-edit.sh"
 wget -O user-new "https://raw.githubusercontent.com/KeningauVPS/menu2/master/user-new.sh"
 wget -O create-trial "https://raw.githubusercontent.com/KeningauVPS/menu2/master/user-trial.sh"
@@ -18,7 +18,7 @@ wget -O limit-login "https://raw.githubusercontent.com/KeningauVPS/menu2/master/
 wget -O create-ocs "https://raw.githubusercontent.com/KeningauVPS/menu2/master/create-ocs.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
-chmod +x menu.sh
+chmod +x menu
 chmod +x banner-edit
 chmod +x user-new
 chmod +x create-trial
